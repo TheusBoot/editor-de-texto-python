@@ -1,0 +1,25 @@
+O fundo do programa vai ser preto.
+
+estou procurando uma forma de abrir os arquivos .txt, no caso achei isto.
+from tkinter import filedialog
+from tkinter import *
+
+root = Tk()
+root.filename =  filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("jpeg files","*.jpg"),("all files","*.*")))
+print (root.filename)
+
+bom, me parece bom e trabalhando com tkinter vamos ter só essa opção.
+
+
+Irei criar algo diferente, um menu completo, e não só "abrir aquivo", vou começar a criar as funções
+
+    def nome_do_arquivo(self):
+        pass
+    def novo_arquivo(self):
+        pass
+    def abrir_arquivo(self):
+        pass
+    def salvar(self):
+        pass
+    def salvar_em(self):
+        pass
