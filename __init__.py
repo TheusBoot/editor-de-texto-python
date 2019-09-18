@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import Text
 from tkinter import Scrollbar
+from tkinter import filedialog
 
 class Menubar:
     def __init__(self,parent):
@@ -25,8 +26,8 @@ class Pythontext:
         window.title("Untitled - Pythontext")
         window.geometry("700x700")
 
-
         self.window = window
+        self.aquivo_nome = None
         self.textarea = tk.Text(window)
         self.scroll = tk.Scrollbar(window,command=self.textarea.yview)
         self.textarea.configure(yscrollcommand=self.scroll.set)
@@ -39,7 +40,21 @@ class Pythontext:
     def novo_arquivo(self):
         pass
     def abrir_arquivo(self):
-        pass
+        self.aquivo_nome = filedialog.askopenfilename(
+            defaultextension=".txt",
+            filetypes=[("Todos os Arquivos", "*.*"),
+            ("Arquivo de texto", "*.txt"),
+            ("Python Scripts", "*.py"),
+            ("Documentos de remarcação", "*.md"),
+            ("Java-Script Arquivos", "*.js"),
+            ("HTML Arquivo", "*.html"),
+            ("CSS Arquivo", "*.css"),
+            ("PDF Aquivos", "*.pdf")])
+        if self.aquivo_nome:
+            self.textarea.delete(1.0, tk.END)
+            with open(self.aquivo_nome, "r") as f:
+                self.textarea.insert(1.0, f.read())
+
     def salvar(self):
         pass
     def salvar_em(self):
