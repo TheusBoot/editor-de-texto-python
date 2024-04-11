@@ -1,4 +1,3 @@
-```markdown
 # Pythontext - Editor de Texto Simples em Python
 
 O Pythontext é um editor de texto simples desenvolvido em Python usando a biblioteca Tkinter. Ele permite criar, abrir, salvar e editar arquivos de texto de forma intuitiva e eficiente.
@@ -34,6 +33,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias ou co
 ## Autor
 
 Este editor de texto foi criado por [Nome do Autor] e é distribuído sob a licença [Licença].
-
-```
-```
