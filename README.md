@@ -32,4 +32,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias ou co
 
 ## Autor
 
-Este editor de texto foi criado por [Nome do Autor] e é distribuído sob a licença [Licença].
+Este editor de texto foi criado por [Theusboot] e é distribuído sob a licença [Licença].
